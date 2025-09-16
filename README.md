@@ -52,11 +52,14 @@ The system is designed for the wireless long-term monitoring of cantilever senso
 ### Multi_sensing
 + This code is for the data reciever and GUI in the PC.
 + This code is upgrade version of the [realtime-plot](https://github.com/Gowoon12/Microsystem_team4/tree/main/Dynamixel_Linux-main/realtimeplot_forGW) from Yang Yang.
-++ adc_plot_widget_multi.py
-++ main_multi.py
-++ main.ui
-++ sensorplot.ui
-++ sensorsetup.ui
+
+  1. adc_plot_widget_multi.py
+  2. main_multi.py
+  3. main.ui
+  4. sensorplot.ui
+  5. sensorsetup.ui
+
+
 
 
 
