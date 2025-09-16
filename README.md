@@ -20,13 +20,14 @@ The system is designed for the wireless long-term monitoring of cantilever senso
 + Amplified signals from cantilever sensors are acquired through the ADC1 pins of the ESP32 board (pins 32, 33, 34, 35, 36, 39).
 + Each ESP32 currently supports up to three sensors, with scalability to six sensors per board.
 
-<img src="1.jpg" width="500" />
+<img src="1.png" width="500" />
   
-
 ### Communication Module
 + Data transmission is carried out using UDP communication via a wifi router.
 + Each ESP32 is assigned a unique IP address and port number (e.g., 7001, 7002, 7003, …).
 + The transmitted data packets are formatted as: {time, Sensor1, Sensor2, Sensor3}
+
+<img src="2.png" width="500" />
 
 ### Visualization & Monitoring Module
 + A custom GUI visualizes the sensor signals in real time, enabling long-term monitoring and analysis.
@@ -62,8 +63,28 @@ The system is designed for the wireless long-term monitoring of cantilever senso
   4. sensorplot.ui
   5. sensorsetup.ui
 
++ When you run the following command, the system will start and the GUI will launch:
 
+    python main_multi.py
 
++ The GUI includes a Record function. Recorded data is automatically organized by date and sensor into pre-defined folders.
 
+<img src="3.png" width="500" />
 
+### Analysis_Algorithm
+
++ To analyze the contractile force, run the following command:
+
+    python Analysis_Algorithm.py
+
++The analysis output is shown as in the figure below:
+<img src="4.png" width="500" />
+
++ Analysis features:
+
++ Real-time (per peak): Amplitude, Period, Contraction Duration (CD), Relaxation Time (RT), Upstroke Velocity, Downstroke Velocity, Contraction Velocity (overall contraction rate), Integral Area (FTI, Force-Time Integral), Arrhythmic Beats, Index of Distortion
+
++ Long-term (measured every 30 min): No Beating / Beating Ratio, Baseline Drift, Fatigue Index, and average values of the real-time indicators
+
+<img src="5.png" width="500" />
 
