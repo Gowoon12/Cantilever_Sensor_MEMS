@@ -78,6 +78,7 @@ The system is designed for the wireless long-term monitoring of cantilever senso
     python Analysis_Algorithm.py
 
 +The analysis output is shown as in the figure below:
+
 <img src="4.png" width="500" />
 
 + Analysis features:
