@@ -44,10 +44,10 @@ The system is designed for the wireless long-term monitoring of cantilever senso
   + GPIO 32, 33, 34, 35, 36, 39
   + UDP Setup
 
-    #define DEST_IP   "192.168.2.2"   // PC IPv4
-    #define DEST_PORT 7006            // Use sequential ports: 7001, 7002, 7003, ...
-    const char *SSID = "meric_drone";
-    const char *PWD  = "***********";
+        #define DEST_IP   "192.168.2.2"   // PC IPv4
+        #define DEST_PORT 7006            // Use sequential ports: 7001, 7002, 7003, ...
+        const char *SSID = "meric_drone";
+        const char *PWD  = "***********";
 
   ### Multi_sensing
   + This code is for the data reciever and GUI in the PC.
