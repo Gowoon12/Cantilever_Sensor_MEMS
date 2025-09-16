@@ -13,12 +13,15 @@ You can find more information in the link below.
  + Platforms: Ubuntu 20.04 LTS and Windows 10
 
 ## System Overview
-<img src="SystemSetup.jpg" width="500" />
+
 The system is designed for the wireless long-term monitoring of cantilever sensors that measure the contractile forces of cardiomyocytes. Its architecture consists of three main components:
 
 ### Sensing Module
 + Amplified signals from cantilever sensors are acquired through the ADC1 pins of the ESP32 board (pins 32, 33, 34, 35, 36, 39).
 + Each ESP32 currently supports up to three sensors, with scalability to six sensors per board.
+
+<img src="1.jpg" width="500" />
+  
 
 ### Communication Module
 + Data transmission is carried out using UDP communication via a wifi router.
