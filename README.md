@@ -13,7 +13,7 @@ You can find more information in the link below.
  + Platforms: Ubuntu 20.04 LTS and Windows 10
 
 ## System Overview
-
+<img src="SystemSetup.jpg" width="500" />
 The system is designed for the wireless long-term monitoring of cantilever sensors that measure the contractile forces of cardiomyocytes. Its architecture consists of three main components:
 
 ### Sensing Module
